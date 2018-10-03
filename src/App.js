@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
+import Br2jsx from './components/Br2jsx'
 
+
+let text = 'получает <br/>ОДИН<br /> props, <br>содержащий <br/>многострочный текст,<br/> разбитый на строки тегами ,  или тображает этот<br /> многострочный текст внутри <br/>себя. '
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        br2jsx
+        <Br2jsx 
+        string={text}
+        />
       </div>
     );
   }
