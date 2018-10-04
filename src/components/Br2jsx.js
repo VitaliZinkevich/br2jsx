@@ -1,6 +1,9 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 
 const br2jsx = (props)=>{
+
+    
 
     let line = props.string.split (/&lt;br ?\/>|&lt;br ?\/&rt;|<br ?\/>|<br?>/g)
 
@@ -20,6 +23,11 @@ return (
 )
 
 }
+
+br2jsx.propTypes = {
+   
+    text: PropTypes.string.isRequired,
+  };
 
 export default  br2jsx
 
