@@ -5,7 +5,7 @@ const br2jsx = (props)=>{
 
     
 
-    let line = props.string.split (/&lt;br ?\/>|&lt;br ?\/&rt;|<br ?\/>|<br?>/g)
+    let line = props.string.split (/&lt;br ?\/>|&lt;br ?\/&rt;|<br ?\/>|<br ?>/g)
 
     line = line.map ((elem, index)=>{
         return (
@@ -25,8 +25,7 @@ return (
 }
 
 br2jsx.propTypes = {
-   
-    text: PropTypes.string.isRequired,
+       text: PropTypes.string.isRequired,
   };
 
 export default  br2jsx
